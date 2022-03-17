@@ -5,6 +5,7 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
@@ -54,7 +55,7 @@ class AdminController extends Controller
         }
 
         $user = new User();
-        $user->image = $image;
+        //$user->image = $image;
         $user->email_address = $request->email_address;
         $user->full_name = $request->full_name;
         $user->phone_number = $request->phone_number;
@@ -63,5 +64,11 @@ class AdminController extends Controller
         if ($user->save()){
             return back()->with('flash_info','Admin has been added successfully');
         }
+
+    }
+
+    public function logout(){
+        Auth::logout();
+        return redirect('auth/login')->with('flash_info','You have logout successfully');
     }
 }

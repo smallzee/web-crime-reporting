@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="{{url('assets/admin/plugins/pace/pace.min.css')}}">
     <link rel="stylesheet" href="{{url('assets/admin/dist/css/bootstrap-datepicker.min.css')}}">
 
+    <link rel="icon" href="{{image_url('logo.png')}}">
+
     <!-- jQuery 3 -->
     <script src="{{url('assets/admin/bower_components/jquery/dist/jquery.min.js')}}"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -69,7 +71,7 @@
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="" class="user-image" alt="User Image">
+                            <img src="{{image_url('author.jpeg')}}" class="user-image" alt="User Image">
                             <span class="hidden-xs">{{ucwords(auth()->user()->full_name)}}</span>
                         </a>
                     </li>
@@ -84,7 +86,7 @@
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="" style="width: 40px; height: 40px;" class="img-circle" alt="User Image">
+                    <img src="{{image_url('author.jpeg')}}" style="width: 40px; height: 40px;" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
                     <p>{{ucwords(auth()->user()->full_name)}}</p>

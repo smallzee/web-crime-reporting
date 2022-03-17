@@ -43,9 +43,9 @@
                         <form action="{{route('login.store')}}" method="post">
                             @csrf
                             <div class="form-group clearfix">
-                                <label for="first_field" class="form-label">Email address</label>
+                                <label for="first_field" class="form-label" style="margin-bottom: 10px;">Email address</label>
                                 <div class="form-box">
-                                    <input name="email" type="email" required class="form-control" id="first_field" placeholder="Email Address" aria-label="Email Address">
+                                    <input name="email_address" type="email" required class="form-control" id="first_field" placeholder="Email Address" aria-label="Email Address">
                                     <i class="flaticon-mail-2"></i>
                                 </div>
                             </div>

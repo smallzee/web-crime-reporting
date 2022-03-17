@@ -5,6 +5,7 @@ namespace App\Http\Controllers\account;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
 class LoginController extends Controller
@@ -40,6 +41,7 @@ class LoginController extends Controller
     public function store(Request $request)
     {
         //
+
 
         $validator = Validator::make($request->all(),[
             'email_address'=>'required',

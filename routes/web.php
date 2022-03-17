@@ -41,6 +41,7 @@ Route::group(['namespace'=>'admin','prefix'=>'admin'], function (){
         Route::post('/update_crime_category', "CrimeController@update_crime_category")->name('update_crime_category');
         Route::post('/create_new_crime_category', "CrimeController@create_new_crime_category")->name('create_new_crime_category');
 
+        Route::get('/logout', "AdminController@logout")->name('logout');
 
     });
 });

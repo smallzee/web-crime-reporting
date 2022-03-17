@@ -12,6 +12,9 @@
 */
 
 Route::get('/', "CrimeController@index")->name('index');
+Route::get('/reporting', "CrimeController@reporting")->name('reporting');
+Route::get('/about', "CrimeController@about")->name('about');
+Route::get('/contact', "CrimeController@contact")->name('contact');
 Route::post('/crime_report', "CrimeController@crime_report")->name('crime_report');
 
 

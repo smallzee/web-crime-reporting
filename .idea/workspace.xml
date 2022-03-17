@@ -13,11 +13,6 @@
       <executable />
     </execution>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>image_ur</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -133,7 +128,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/auth" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -141,13 +136,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/auth" />
       <recent name="$PROJECT_DIR$/public/assets/images" />
       <recent name="$PROJECT_DIR$/public/assets/lib" />
       <recent name="$PROJECT_DIR$/resources/views/auth" />
       <recent name="$PROJECT_DIR$/resources" />
-      <recent name="$PROJECT_DIR$/public/assets/admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/images" />
       <recent name="$PROJECT_DIR$/resources/views" />
     </key>
   </component>
@@ -170,7 +166,7 @@
       <workItem from="1629128290892" duration="3547000" />
       <workItem from="1629176042562" duration="4492000" />
       <workItem from="1647473436746" duration="887000" />
-      <workItem from="1647544584416" duration="2137000" />
+      <workItem from="1647544584416" duration="6180000" />
     </task>
     <servers />
   </component>
@@ -194,9 +190,9 @@
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state width="1638" height="269" key="GridCell.Tab.0.right/0.25.1680.1025@0.25.1680.1025" timestamp="1647474465932" />
-    <state x="659" y="465" key="NewPhpFileDialog" timestamp="1647546711734">
+    <state x="659" y="465" key="NewPhpFileDialog" timestamp="1647549738084">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="659" y="465" key="NewPhpFileDialog/0.25.1680.1025@0.25.1680.1025" timestamp="1647546711734" />
+    <state x="659" y="465" key="NewPhpFileDialog/0.25.1680.1025@0.25.1680.1025" timestamp="1647549738084" />
   </component>
 </project>

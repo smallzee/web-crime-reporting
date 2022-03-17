@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $page_title }} &dash; {{ getenv('APP_NAME') }}</title>
     <!-- favicon -->
+    <link rel="icon" href="{{image_url('logo.png')}}">
     <!-- animate -->
     <link rel="stylesheet" href="{{asset('assets/lib/css/animate.css')}}">
     <!-- bootstrap -->

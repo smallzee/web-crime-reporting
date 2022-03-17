@@ -1,90 +1,89 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ $page_title }}</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <style>
-            .form-control{
-                height: 45px;
-            }
-            body{
-                font-family: 'Open Sans', sans-serif;
-                font-weight: 400;
-                font-size: 14px;
-            }
-            label{
-                margin-bottom: 10px;
-            }
-            .form-group{
-                margin-bottom: 10px;
-            }
-        </style>
-    </head>
-    <body>
+@extends('layout.app')
 
-    <div style="margin: 10px">
+@push('content')
+
+    <!-- breadcrumb-area start -->
+    <div class="breadcrumb-area breadcrumb-style-02 main-bg">
         <div class="container">
-            <form action="{{url('crime_report')}}" method="post">
-
-                @csrf
-                <div class="row">
-                    <div class="col-sm-12">
-                       <div class="form-group">
-                           <label for="">Crime Reporter Name</label>
-                           <input type="text" class="form-control" required placeholder="Crime Reporter Name" name="reporter_name" id="">
-                       </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <label for="">Crime Reporter Mobile-No</label>
-                            <input type="text" name="reporter_mobile" class="form-control" placeholder="Crime Reporter Mobile-No" id="">
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <label for="">Crime Category</label>
-                            <select name="crime_category" id="" class="form-control">
-                                <option value="" disabled selected>Select</option>
-                                @foreach(\App\Category::get() as $value)
-                                    <option value="{{$value->id}}"> {{ ucwords($value->name) }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                    </div>
-
-
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <label for="">Crime Report Location</label>
-                            <input type="text" class="form-control" required placeholder="Crime Report Location" name="offence_location" id="">
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <label for="">Crime Report Details</label>
-                            <textarea name="offence" class="form-control" required placeholder="Crime Report Details" id="" style="resize: none; min-height: 100px;"></textarea>
-                        </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-inner padding-top-240">
+                        <h1 class="page-title">{{ $page_title }}</h1>
+                        <ul class="page-list">
+                            <li><a href="{{url('/')}}">Home /</a></li>
+                            <li><a href="{{url('reporting')}}">{{ $page_title }}</a></li>
+                        </ul>
                     </div>
                 </div>
-
-                <div class="col-12">
-                    <div class="form-group mt-3">
-                        <input type="submit" style="width: 100%; background: #01579B; font-size: 15px; border: #01579B solid thin;" class="btn btn-lg btn-primary btn-block" value="Report Crime" name="add" id="">
-                    </div>
-                </div>
-            </form>
+            </div>
+        </div>
+        <div class="breadcrumb-icon">
+            <i class="flaticon-fireworks"></i>
         </div>
     </div>
+    <!-- breadcrumb-area end -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <div class="politx-content-area padding-top-70 margin-bottom-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <form class="contact-form" action="{{url('crime_report')}}" method="post">
+                        @csrf
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="">Crime Reporter Name</label>
+                                    <input type="text" class="form-control" required placeholder="Crime Reporter Name" name="reporter_name" id="">
+                                </div>
+                            </div>
 
-    </body>
-</html>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="">Crime Reporter Mobile-No</label>
+                                    <input type="text" name="reporter_mobile" class="form-control" placeholder="Crime Reporter Mobile-No" id="">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="">Crime Category</label>
+                                    <select name="crime_category" id="" class="form-control" style="height: 48px;">
+                                        <option value="" disabled selected>Select</option>
+                                        @foreach(\App\Category::get() as $value)
+                                            <option value="{{$value->id}}"> {{ ucwords($value->name) }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="">Crime Report Location</label>
+                                    <input type="text" class="form-control" required placeholder="Crime Report Location" name="offence_location" id="">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="">Crime Report Details</label>
+                                    <textarea name="offence" class="form-control" required placeholder="Crime Report Details" id="" style="resize: none; min-height: 100px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-wrapper padding-top-33">
+                            <button class="btn btn-custom-primary btn-block">Send Report Case</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4 d-flex align-self-center">
+                    <div class="content-box-style-01 margin-top-45">
+                        <p class="section-subtitle">{{ $page_title }}</p>
+                        <h2 class="title">Don't hesitate to report any case</h2>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qu exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endpush

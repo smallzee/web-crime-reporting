@@ -76,49 +76,49 @@ Version: 1.0.0
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
 @font-face {
   font-family: "Circular Std";
-  src: url("/assets/images/fonts/CircularStd-Black.otf") format("opentype");
+  src: url("../fonts/CircularStd-Black.otf") format("opentype");
   font-weight: 900;
   font-style: normal; }
 
 @font-face {
   font-family: "Circular Std";
-  src: url("/assets/images/fonts/CircularStd-BlackItalic.otf") format("opentype");
+  src: url("../fonts/CircularStd-BlackItalic.otf") format("opentype");
   font-weight: 900;
   font-style: italic; }
 
 @font-face {
   font-family: "Circular Std";
-  src: url("/assets/images/fonts/CircularStd-Bold.otf") format("opentype");
+  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "Circular Std";
-  src: url("/assets/images/fonts/CircularStd-BoldItalic.otf") format("opentype");
+  src: url("../fonts/CircularStd-BoldItalic.otf") format("opentype");
   font-weight: 700;
   font-style: italic; }
 
 @font-face {
   font-family: "Circular Std";
-  src: url("/assets/images/fonts/CircularStd-Book.otf") format("opentype");
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Circular Std";
-  src: url("/assets/images/fonts/CircularStd-BookItalic.otf") format("opentype");
+  src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
   font-family: "Circular Std";
-  src: url("/assets/images/fonts/CircularStd-Medium.otf") format("opentype");
+  src: url("../fonts/CircularStd-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: "Circular Std";
-  src: url("/assets/images/fonts/CircularStd-MediumItalic.otf") format("opentype");
+  src: url("../fonts/CircularStd-MediumItalic.otf") format("opentype");
   font-weight: 500;
   font-style: italic; }
 
@@ -2879,7 +2879,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .banner-style-2 {
   position: relative;
-  background: url(/assets/images/img/banner/5.png);
+  background: url(/assets/images/banner/5.png);
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -2931,12 +2931,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
           color: #fff; }
 
 .banner-bg-1 {
-  background: url(/assets/images/img/banner/4.png);
+  background: url(/assets/images/banner/4.png);
   background-size: cover;
   background-position: center center; }
 
 .banner-bg-3 {
-  background: url(/assets/images/img/banner/bg3.jpg);
+  background: url(/assets/images/banner/bg3.jpg);
   background-size: cover;
   background-position: center center; }
 
@@ -2966,7 +2966,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .banner-style-4 {
   position: relative;
-  background: url(/assets/images/img/banner/3.png.jpeg);
+  background: url(/assets/images/banner/3.png.jpeg);
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -4268,7 +4268,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   margin-top: 0px; }
 
 .footer-bg {
-  background: url(/assets/images/img/bg/footer.png.html);
+  background: url(/assets/images/bg/footer.png.html);
   background-position: 50% 15%; }
 
 .contact-widget {
@@ -4373,7 +4373,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   margin-top: 15px; }
 
 .journey-box-area {
-  background: url(/assets/images/img/about-shape.png);
+  background: url(/assets/images/about-shape.png);
   background-repeat: no-repeat; }
 
 .journey-box-wrapper {
@@ -5132,7 +5132,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   margin-bottom: 50px; }
 
 .wealfer-area {
-  background: url(/assets/images/img/wealfer.png);
+  background: url(/assets/images/wealfer.png);
   background-position: top right;
   background-repeat: no-repeat;
   min-height: 700px;
@@ -6914,17 +6914,17 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       width: 100%;
       height: 100%; }
       .info-popup-content__img--one {
-        background-image: url(/assets/images/img/modal/one.png.html);
+        background-image: url(/assets/images/modal/one.png.html);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover; }
       .info-popup-content__img--two {
-        background-image: url(/assets/images/img/blog-bg.png.html);
+        background-image: url(/assets/images/blog-bg.png.html);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover; }
       .info-popup-content__img--three {
-        background-image: url(/assets/images/img/slide-three.jpg.html);
+        background-image: url(/assets/images/slide-three.jpg.html);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover; }
@@ -7010,17 +7010,17 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       width: 100%;
       height: 100%; }
       .location-popup-content__img--one {
-        background-image: url(/assets/images/img/modal/two.png.html);
+        background-image: url(/assets/images/modal/two.png.html);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover; }
       .location-popup-content__img--two {
-        background-image: url(/assets/images/img/blog-bg.png.html);
+        background-image: url(/assets/images/blog-bg.png.html);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover; }
       .location-popup-content__img--three {
-        background-image: url(/assets/images/img/slide-three.jpg.html);
+        background-image: url(/assets/images/slide-three.jpg.html);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover; }
@@ -7080,15 +7080,15 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     */
 @font-face {
   font-family: "Flaticon";
-  src: url("/assets/images/fonts/Flaticon.eot");
-  src: url("/assets/images/fonts/Flaticon%EF%B9%96.eot#iefix") format("embedded-opentype"), url("/assets/images/fonts/Flaticon.woff2") format("woff2"), url("/assets/images/fonts/Flaticon.woff") format("woff"), url("/assets/images/fonts/Flaticon.ttf") format("truetype"), url("/assets/images/fonts/Flaticon.svg#Flaticon") format("svg");
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon%EF%B9%96.eot#iefix") format("embedded-opentype"), url("../fonts/Flaticon.woff2") format("woff2"), url("../fonts/Flaticon.woff") format("woff"), url("../fonts/Flaticon.ttf") format("truetype"), url("../fonts/Flaticon.svg#Flaticon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: "Flaticon";
-    src: url("/assets/images/fonts/Flaticon.svg#Flaticon") format("svg"); } }
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg"); } }
 
 .fi:before {
   display: inline-block;
@@ -7813,7 +7813,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     width: 85%;
     height: calc(100% - 82px);
     content: '';
-    background: url(/assets/images/img/action/5.png);
+    background: url(/assets/images/action/5.png);
     border-radius: 10px;
     z-index: -1;
     right: 0px;

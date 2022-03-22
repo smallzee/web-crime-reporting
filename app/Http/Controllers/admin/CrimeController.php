@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Category;
 use App\Http\Controllers\Controller;
+use App\Reporting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -89,6 +90,30 @@ class CrimeController extends Controller
             return back()->with('flash_info','Crime category has been updated successfully');
         }
 
+    }
+
+    public function view_report(Reporting $reporting){
+        $data['page_title'] = "Crime Report Information";
+        $data['reporting'] = $reporting;
+        return view('admin.view-report',$data);
+    }
+
+    public function update_crime(Request $request){
+       $validator = Validator::make($request->all(),[
+           'ipo_incharge'=>'required',
+           'status'=>'required'
+       ]);
+
+       if ($validator->fails()){
+           return back()->with('flash_error',$validator->errors()->first());
+       }
+
+       $reporting = Reporting::find($request->id);
+       $reporting->status = $request->status;
+       $reporting->ipo_incharge = $request->ipo_incharge;
+       $reporting->save();
+
+       return back()->with('flash_info','Updated successfuly');
     }
 
     public function crime_reporting(){

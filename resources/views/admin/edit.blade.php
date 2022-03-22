@@ -15,26 +15,29 @@
             </div>
             <div class="box-body">
 
-                <form action="{{url('admin/create_new_admin')}}" method="post">
+                <form action="{{url('admin/update_user')}}" method="post">
                     @csrf
                     <div class="form-group">
                         <label for="">Email Address</label>
-                        <input type="email" class="form-control" required name="email" placeholder="Email Address" id="">
+                        <input type="email" class="form-control" value="{{ $user->email_address }}" readonly="" required placeholder="Email Address" id="">
+                        <small>Please Note : Email address cannot be change</small>
                     </div>
+
+                    <input type="hidden" name="id" value="{{ $user->id }}" id="">
 
                     <div class="form-group">
                         <label for="">Full Name</label>
-                        <input type="text" class="form-control" required placeholder="Full Name" name="full_name" id="">
+                        <input type="text" class="form-control" value="{{ $user->full_name }}" required placeholder="Full Name" name="full_name" id="">
                     </div>
 
                     <div class="form-group">
                         <label for="">Phone Number</label>
-                        <input type="text" class="form-control" required placeholder="Phone Number"  name="phone_number" id="">
+                        <input type="text" class="form-control" value="{{ $user->phone_number }}" required placeholder="Phone Number"  name="phone_number" id="">
                     </div>
 
                     <div class="form-group">
                         <label for="">Service No</label>
-                        <input type="text" class="form-control" required placeholder="Service No"  name="service_no" id="">
+                        <input type="text" class="form-control" value="{{ $user->service_no }}" required placeholder="Service No"  name="service_no" id="">
                     </div>
 
                     <div class="form-group">
@@ -42,14 +45,9 @@
                         <select name="rank" required id="" class="form-control">
                             <option value="" disabled selected>Select</option>
                             @foreach(array('Police technician','Police officer','police detective','Police corporal','Police sergeant','Police lieutenant','Police captain','Deputy police chief','Chief of police') as $value)
-                                <option value="{{ $value }}">{{ $value }}</option>
+                                <option value="{{ $value }}" {{ ($value == $user->rank) ? 'selected' : '' }}>{{ $value }}</option>
                             @endforeach
                         </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="">Password</label>
-                        <input type="password" class="form-control" required name="password" placeholder="Password" id="">
                     </div>
 
                     <div class="form-group">

@@ -24,6 +24,9 @@
                             <th>Email Address</th>
                             <th>Full Name</th>
                             <th>Phone Number</th>
+                            <th>Service No</th>
+                            <th>Rank</th>
+                            <th>Action</th>
                         </tr>
                         </thead>
                         <tfoot>
@@ -32,6 +35,9 @@
                             <th>Email Address</th>
                             <th>Full Name</th>
                             <th>Phone Number</th>
+                            <th>Service No</th>
+                            <th>Rank</th>
+                            <th>Action</th>
                         </tr>
                         </tfoot>
                         <tbody>
@@ -42,6 +48,9 @@
                                 <td>{{$value->email_address}}</td>
                                 <td>{{$value->full_name}}</td>
                                 <td>{{$value->phone_number}}</td>
+                                <td>{{ $value->service_no }}</td>
+                                <td>{{ $value->rank }}</td>
+                                <td><a href="{{url('admin/edit/'.$value->id)}}" class="btn btn-primary">Edit</a></td>
                             </tr>
                         @endforeach
                         </tbody>

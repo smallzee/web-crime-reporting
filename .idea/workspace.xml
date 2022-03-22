@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f20f2b9d-95dd-4f78-888e-9ab6df122cfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/crime-reporting.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/view-report.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/account/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/account/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CrimeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CrimeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin/CrimeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin/CrimeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Reporting.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Reporting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_08_16_154849_create_category_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_08_16_154849_create_category_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_08_16_154938_create_reporting_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_08_16_154938_create_reporting_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/add-user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/add-user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/crime-reporting.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/crime-reporting.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reporting.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reporting.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +137,9 @@
     <option name="height" value="777" />
   </component>
   <component name="ProjectId" id="26ULtfByYcam5eXFdxQK4wROPNr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -182,7 +188,9 @@
       <workItem from="1629176042562" duration="4492000" />
       <workItem from="1647473436746" duration="887000" />
       <workItem from="1647544584416" duration="6180000" />
-      <workItem from="1647550794484" duration="1060000" />
+      <workItem from="1647550794484" duration="2526000" />
+      <workItem from="1647571651594" duration="1371000" />
+      <workItem from="1647982219946" duration="2496000" />
     </task>
     <servers />
   </component>
@@ -206,9 +214,13 @@
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state width="1638" height="269" key="GridCell.Tab.0.right/0.25.1680.1025@0.25.1680.1025" timestamp="1647474465932" />
-    <state x="659" y="465" key="NewPhpFileDialog" timestamp="1647549738084">
+    <state x="659" y="465" key="NewPhpFileDialog" timestamp="1647983821001">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="659" y="465" key="NewPhpFileDialog/0.25.1680.1025@0.25.1680.1025" timestamp="1647549738084" />
+    <state x="659" y="465" key="NewPhpFileDialog/0.25.1680.1025@0.25.1680.1025" timestamp="1647983821001" />
+    <state x="505" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1647983654421">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="505" y="252" width="670" height="676" key="search.everywhere.popup/0.25.1680.1025@0.25.1680.1025" timestamp="1647983654421" />
   </component>
 </project>

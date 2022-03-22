@@ -41,6 +41,23 @@
                             <th>Actions</th>
                         </tr>
                         </tfoot>
+                        <tbody>
+                        @php($sn =1)
+                        @foreach(\App\Reporting::orderBy('id','desc')->get() as $value)
+                            <tr>
+                                <td>{{ $sn++ }}</td>
+                                <td>{{ $value->reporter_name }}</td>
+                                <td>{{ $value->reporter_mobile }}</td>
+                                <td>{{ $value->category->name }}</td>
+                                <td>{{ $value->category->crime_code }}</td>
+                                <td>{{ $value->offence }}</td>
+                                <td>{{ $value->offence_location }}</td>
+                                <td>
+                                    <a href="{{url('admin/view-report/'.$value->id)}}" class="btn btn-primary">View</a>
+                                </td>
+                            </tr>
+                        @endforeach
+                        </tbody>
                     </table>
                 </div>
 

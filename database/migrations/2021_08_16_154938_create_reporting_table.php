@@ -20,6 +20,8 @@ class CreateReportingTable extends Migration
             $table->integer('category_id');
             $table->text('offence');
             $table->string('offence_location');
+            $table->string('status');
+            $table->string('ipo_incharge');
             $table->timestamps();
         });
     }

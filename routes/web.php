@@ -29,8 +29,12 @@ Route::group(['namespace'=>'admin','prefix'=>'admin'], function (){
         Route::get('/dashboard', "AdminController@dashboard")->name('dashboard');
 
         Route::get('/users', "AdminController@users")->name('users');
+        Route::get('/edit/{id}', "AdminController@edit")->name('edit');
         Route::post('/create_new_user', "AdminController@create_new_user")->name('create_new_user');
+        Route::post('/update_user', "AdminController@update_user")->name('update_user');
+
         Route::get('/add-user', "AdminController@add_user")->name('add_user');
+        Route::get('/view-report/{reporting}', "CrimeController@view_report")->name('view_report');
 
 
         Route::get('/add-crime-category', "CrimeController@add_crime_category")->name('add_crime_category');
@@ -40,6 +44,7 @@ Route::group(['namespace'=>'admin','prefix'=>'admin'], function (){
         Route::get('/crime-reporting', "CrimeController@crime_reporting")->name('crime_reporting');
         Route::post('/update_crime_category', "CrimeController@update_crime_category")->name('update_crime_category');
         Route::post('/create_new_crime_category', "CrimeController@create_new_crime_category")->name('create_new_crime_category');
+        Route::post('/update_crime', "CrimeController@update_crime")->name('update_crime');
 
         Route::get('/logout', "AdminController@logout")->name('logout');
 

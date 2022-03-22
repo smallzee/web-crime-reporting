@@ -45,7 +45,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{url('assets/admin/css/style.css')}}">
 </head>
-<body class="hold-transition skin-red sidebar-mini" >
+<body class="hold-transition skin-blue sidebar-mini" >
 
 <div class="wrapper">
     <header class="main-header">
@@ -102,7 +102,6 @@
                         <span>Dashboard</span>
                     </a>
                 </li>
-
 
                 <li >
                     <a href="{{url('admin/users')}}">

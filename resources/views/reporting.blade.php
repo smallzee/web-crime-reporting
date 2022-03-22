@@ -27,6 +27,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
+
+                    @include('flash')
+
                     <form class="contact-form" action="{{url('crime_report')}}" method="post">
                         @csrf
                         <div class="row">
